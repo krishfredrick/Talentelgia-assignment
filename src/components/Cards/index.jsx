@@ -41,7 +41,7 @@ const CardDescripition = ({mockupData})=> {
       <Typography variant="body2">
         contact: {mockupData.phone}
         <br />
-        Address: {mockupData.zip_code +" ZIP"}
+        Address: {mockupData.zipcode +" ZIP"}
         <details>
           <ul>
             <li>{ mockupData.street+ ", "+mockupData.state }</li>
