@@ -17,7 +17,7 @@ function App() {
       try {
         const res =  await fetch(`https://api.slingacademy.com/v1/sample-data/users`);
         const api_data = await res.json();
-        console.log("from api", api_data.users);
+        // console.log("from api", api_data.users);
         setData(api_data.users);
         setPageUser(api_data.users.slice(0,3));
       } catch (error) {
@@ -36,10 +36,10 @@ function App() {
   const handleChange = (event, value)=>{
     setPageNumber(value);
     console.log('page number',value);
-    console.log('data>>', data);
+    // console.log('data>>', data);
     setPageUser(data.slice((value-1)*3, (value-1)*3+3));
   }
-  console.log('app.jsx',pageUser);
+  // console.log('app.jsx',pageUser);
   
   return (
     <>
